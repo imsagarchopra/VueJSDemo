@@ -15,7 +15,7 @@
     <!-- <h1>{{title}}</h1>
     <Child v-on:ChangeTitle="UpdateTitleText($event)"/> -->
 
-    <h1>Make form in Vue js</h1>
+    <h1>{{ 'Make form in Vue js' | Ucase}}</h1>
     <Login/>
     <!-- <SignUp/> -->
   </div>
