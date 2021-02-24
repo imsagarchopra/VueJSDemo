@@ -16,8 +16,8 @@
     <Child v-on:ChangeTitle="UpdateTitleText($event)"/> -->
 
     <h1>Make form in Vue js</h1>
-    <!-- <Login/> -->
-    <SignUp/>
+    <Login/>
+    <!-- <SignUp/> -->
   </div>
 </template>
 
@@ -34,9 +34,9 @@
 // import Databind from './components/Databinding'
 //import Child from './components/CustomEvents'
 
-//import Login from './components/Login'
+import Login from './components/Login'
 
-import SignUp from './components/SignUp'
+// import SignUp from './components/SignUp'
 export default {
   name: 'App',
   components: {
@@ -51,8 +51,8 @@ export default {
     // Databind,
     //Child,
 
-    //Login
-    SignUp
+    Login
+    //SignUp
     
   },
   data(){
