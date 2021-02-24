@@ -11,8 +11,12 @@
     <!-- <Template/>
     <ClassStyle/> -->
     <!-- <Databind/> -->
-    <h1>{{title}}</h1>
-    <Child v-on:ChangeTitle="UpdateTitleText($event)"/>
+
+    <!-- <h1>{{title}}</h1>
+    <Child v-on:ChangeTitle="UpdateTitleText($event)"/> -->
+
+    <h1>Make form in Vue js</h1>
+    <Login/>
   </div>
 </template>
 
@@ -27,7 +31,9 @@
 // import ClassStyle from './components/Class&Style.vue'
 
 // import Databind from './components/Databinding'
-import Child from './components/CustomEvents'
+//import Child from './components/CustomEvents'
+
+import Login from './components/Login'
 export default {
   name: 'App',
   components: {
@@ -38,9 +44,11 @@ export default {
 
     // Home,
     // Template,
-    // ClassStyle
-    // Databind
-    Child
+    // ClassStyle,
+    // Databind,
+    //Child,
+
+    Login
   },
   data(){
     return{
