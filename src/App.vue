@@ -8,8 +8,11 @@
     <Loop/> -->
 
     <!-- <Home/> -->
-    <Template/>
-    <ClassStyle/>
+    <!-- <Template/>
+    <ClassStyle/> -->
+    <!-- <Databind/> -->
+    <h1>{{title}}</h1>
+    <Child v-on:ChangeTitle="UpdateTitleText($event)"/>
   </div>
 </template>
 
@@ -20,9 +23,11 @@
 // import Loop from './components/Loops.vue'
 
 // import Home from './components/Home.vue'
-import Template from './components/Template.vue'
-import ClassStyle from './components/Class&Style.vue'
+// import Template from './components/Template.vue'
+// import ClassStyle from './components/Class&Style.vue'
 
+// import Databind from './components/Databinding'
+import Child from './components/CustomEvents'
 export default {
   name: 'App',
   components: {
@@ -32,8 +37,21 @@ export default {
     // Loop
 
     // Home,
-    Template,
-    ClassStyle
+    // Template,
+    // ClassStyle
+    // Databind
+    Child
+  },
+  data(){
+    return{
+      title:"Child to parent data"
+    }
+  },
+  methods:{
+    UpdateTitleText(title)
+    {
+      this.title = title
+    }
   }
 }
 </script>
