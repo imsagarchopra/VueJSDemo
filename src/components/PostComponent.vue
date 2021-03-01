@@ -27,7 +27,7 @@ export default {
     methods:{
         submitData(e)
         {
-            this.axios.post("http://localhost:8080/",this.post).then(result => {console.warn("result",result)})
+            this.axios.post("http://localhost:3000/posts",this.post).then(result => {console.warn("result",result)})
             
             e.preveneDefault();
         }

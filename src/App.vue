@@ -20,7 +20,11 @@
     <!-- <SignUp/> -->
     <!-- <router-view/> -->
     <!-- <EmployeeList/> -->
-    <PostComponent/>
+    <!-- <PostComponent/> -->
+
+    <router-link to="/">Home</router-link><br><br>
+    <router-link to="/Login">Login</router-link>
+    <router-view></router-view>
   </div>
 </template>
 
@@ -43,7 +47,7 @@
 
 // import EmployeeList from './components/EmployeeList'
 
-import PostComponent from './components/PostComponent'
+//import PostComponent from './components/PostComponent'
 export default {
   name: 'App',
   components: {
@@ -63,7 +67,7 @@ export default {
     
     //EmployeeList
 
-    PostComponent
+    // PostComponent
   },
   data(){
     return{
