@@ -19,7 +19,8 @@
     <Login/> -->
     <!-- <SignUp/> -->
     <!-- <router-view/> -->
-    <EmployeeList/>
+    <!-- <EmployeeList/> -->
+    <PostComponent/>
   </div>
 </template>
 
@@ -40,7 +41,9 @@
 
 // import SignUp from './components/SignUp'
 
-import EmployeeList from './components/EmployeeList'
+// import EmployeeList from './components/EmployeeList'
+
+import PostComponent from './components/PostComponent'
 export default {
   name: 'App',
   components: {
@@ -58,7 +61,9 @@ export default {
     //Login
     //SignUp
     
-    EmployeeList
+    //EmployeeList
+
+    PostComponent
   },
   data(){
     return{
