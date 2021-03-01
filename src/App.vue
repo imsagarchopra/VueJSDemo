@@ -18,7 +18,8 @@
     <!-- <h1>{{ 'Make form in Vue js' | Ucase}}</h1>
     <Login/> -->
     <!-- <SignUp/> -->
-    <router-view/>
+    <!-- <router-view/> -->
+    <EmployeeList/>
   </div>
 </template>
 
@@ -38,6 +39,8 @@
 // import Login from './components/Login'
 
 // import SignUp from './components/SignUp'
+
+import EmployeeList from './components/EmployeeList'
 export default {
   name: 'App',
   components: {
@@ -55,6 +58,7 @@ export default {
     //Login
     //SignUp
     
+    EmployeeList
   },
   data(){
     return{
