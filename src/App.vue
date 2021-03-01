@@ -21,10 +21,14 @@
     <!-- <router-view/> -->
     <!-- <EmployeeList/> -->
     <!-- <PostComponent/> -->
-
+<!-- 
     <router-link to="/">Home</router-link><br><br>
     <router-link to="/Login">Login</router-link>
-    <router-view></router-view>
+    <router-view></router-view> -->
+
+    <component v-bind:is="cmp"/><br><br>
+    <button v-on:click="UpdateCmp(Login)"> Sign In</button>
+    <button v-on:click="UpdateCmp(SignUp)"> Sign Up</button>
   </div>
 </template>
 
@@ -41,9 +45,9 @@
 // import Databind from './components/Databinding'
 //import Child from './components/CustomEvents'
 
-// import Login from './components/Login'
+import Login from './components/Login'
 
-// import SignUp from './components/SignUp'
+import SignUp from './components/SignUp'
 
 // import EmployeeList from './components/EmployeeList'
 
@@ -68,16 +72,24 @@ export default {
     //EmployeeList
 
     // PostComponent
+
+    "signUp":SignUp,
+    "signIn":Login
   },
   data(){
     return{
-      title:"Child to parent data"
+      title:"Child to parent data",
+      cmp:"SignUp"
     }
   },
   methods:{
     UpdateTitleText(title)
     {
       this.title = title
+    },
+    UpdateCmp(item)
+    {
+      this.cmp = item
     }
   }
 }
